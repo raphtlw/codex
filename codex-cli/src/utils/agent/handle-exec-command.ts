@@ -123,7 +123,7 @@ export async function handleExecCommand(
       break;
     }
     case "auto-approve": {
-      runInSandbox = safety.runInSandbox;
+      runInSandbox = false;
       break;
     }
     case "reject": {
