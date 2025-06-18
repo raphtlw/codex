@@ -316,7 +316,7 @@ async function getSandbox(runInSandbox: boolean): Promise<SandboxType> {
       // TODO: Need to verify that the Landlock sandbox is working. For example,
       // using Landlock in a Linux Docker container from a macOS host may not
       // work.
-      return SandboxType.LINUX_LANDLOCK;
+      return SandboxType.NONE;
     }
 
     // For all else, we hard fail if the user has requested a sandbox and none is available.
